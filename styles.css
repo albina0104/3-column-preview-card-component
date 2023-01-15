@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white-p: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray-bg-h-btn: hsl(0, 0%, 95%);
+
+    --font-headings: 'Big Shoulders Display', sans-serif;
+    --font-text: 'Lexend Deca', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-light-gray-bg-h-btn);
+    padding: 88px 10px;
+    min-height: 100vh;
+
+}
+
+.cards {
+    margin: auto;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    padding: 3rem;
+    width: 20.375rem;
+}
+
+.card-1 {
+    background-color: var(--bright-orange);
+}
+
+.card-1 .btn {
+    color: var(--bright-orange);
+}
+
+.card-2 {
+    background-color: var(--dark-cyan);
+}
+
+.card-2 .btn {
+    color: var(--dark-cyan);
+}
+
+.card-3 {
+    background-color: var(--very-dark-cyan);
+}
+
+.card-3 .btn {
+    color: var(--very-dark-cyan);
+}
+
+.card__img {
+    margin-bottom: 2.5rem;
+}
+
+.card__h1 {
+    margin-bottom: 2.5rem;
+    font-family: var(--font-headings);
+    color: var(--very-light-gray-bg-h-btn);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.card__desc {
+    margin-bottom: 1.75rem;
+    font-family: var(--font-text);
+    color: var(--transparent-white-p);
+    line-height: 1.5rem;
+    font-size: 0.945rem;
+}
+
+.btn {
+    padding: 0.71rem 1.875rem;
+    border-radius: 1.8rem;
+    border: 2px solid var(--very-light-gray-bg-h-btn);
+    background-color: var(--very-light-gray-bg-h-btn);
+    font-family: var(--font-text);
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--very-light-gray-bg-h-btn);
+}
+
+.attribution {
+    font-size: 0.688rem;
+    text-align: center;
+    margin: 10px;
+    font-family: var(--font-text);
+}
+
+.attribution a {
+    color: var(--dark-cyan);
+}
+
+.attribution a:hover {
+    color: var(--bright-orange);
+}
+
+@media screen and (min-width: 62rem) {
+    body {
+        padding: 10px;
+    }
+
+    .cards {
+        flex-direction: row;
+    }
+
+    .card {
+        width: 19.125rem;
+    }
+
+    .card__desc {
+        margin-bottom: 5.25rem;
+    }
+}
