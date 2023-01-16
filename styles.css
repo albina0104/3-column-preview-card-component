@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--very-light-gray-bg-h-btn);
-    padding: 88px 10px;
+    padding: 10px;
     min-height: 100vh;
 
 }
@@ -103,7 +103,7 @@ body {
 .attribution {
     font-size: 0.688rem;
     text-align: center;
-    margin: 10px;
+    margin-top: 10px;
     font-family: var(--font-text);
 }
 
@@ -116,10 +116,6 @@ body {
 }
 
 @media screen and (min-width: 62rem) {
-    body {
-        padding: 10px;
-    }
-
     .cards {
         flex-direction: row;
     }
