@@ -44,7 +44,7 @@ body {
     background-color: var(--bright-orange);
 }
 
-.card-1 .btn {
+.card-1 .link {
     color: var(--bright-orange);
 }
 
@@ -52,7 +52,7 @@ body {
     background-color: var(--dark-cyan);
 }
 
-.card-2 .btn {
+.card-2 .link {
     color: var(--dark-cyan);
 }
 
@@ -60,7 +60,7 @@ body {
     background-color: var(--very-dark-cyan);
 }
 
-.card-3 .btn {
+.card-3 .link {
     color: var(--very-dark-cyan);
 }
 
@@ -84,7 +84,7 @@ body {
     font-size: 0.945rem;
 }
 
-.btn {
+.link {
     padding: 0.71rem 1.875rem;
     border-radius: 1.8rem;
     border: 2px solid var(--very-light-gray-bg-h-btn);
@@ -92,9 +92,10 @@ body {
     font-family: var(--font-text);
     font-size: 0.95rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.btn:hover {
+.link:hover {
     background-color: transparent;
     color: var(--very-light-gray-bg-h-btn);
 }
