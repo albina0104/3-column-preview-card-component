@@ -24,7 +24,6 @@ body {
     background-color: var(--very-light-gray-bg-h-btn);
     padding: 10px;
     min-height: 100vh;
-
 }
 
 .cards {
@@ -37,7 +36,7 @@ body {
 
 .card {
     padding: 3rem;
-    width: 20.375rem;
+    max-width: 20.375rem;
 }
 
 .card-1 {
